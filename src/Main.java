@@ -14,12 +14,11 @@ public class Main {
         myColeccion.agregarVinilo("Nirvana", "Nevermind", "1991");
         myColeccion.agregarVinilo("The Rolling Stones", "Let It Bleed", "1969");
         myColeccion.agregarVinilo("Bob Dylan", "Highway 61 Revisited", "1965");
-        myColeccion.agregarVinilo("Queen", "News of the World", "1977");
 
         myColeccion.mostrarColeccion();
         myColeccion.mostrarTotal();
         myColeccion.mostrarDisponibles();
-        myColeccion.mostrarBusquedaArtista("Queen");
+        myColeccion.mostrarBusquedaArtista("Iron Maiden");
 
     }
 }
