@@ -16,7 +16,7 @@ Contiene tres clases principales:
 ColeccionVinilos myColeccion = new ColeccionVinilos();
 
 //Agrega un vinilo a la colección
-myColeccion.agregarVinilo("<nombre_artista>", "<nombre_grupo>", "<año_lanzamiento>");
+myColeccion.agregarVinilo("<nombre_artista>", "<nombre_canción>", "<año_lanzamiento>");
 
 // Muestra el total de vinilos
 myColeccion.mostrarTotal();
