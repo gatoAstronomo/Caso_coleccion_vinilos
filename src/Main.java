@@ -19,6 +19,10 @@ public class Main {
         myColeccion.agregarVinilo("The Rolling Stones", "Let It Bleed", "1969");
         myColeccion.agregarVinilo("Bob Dylan", "Highway 61 Revisited", "1965");
 
+        for(int i = 0; i < 89; i++){
+            myColeccion.agregarVinilo("asdfadf","sdf","af");
+        }
+
         // Muestra el estado de la coleccion
         myColeccion.mostrarTotal();
         myColeccion.mostrarDisponibles();

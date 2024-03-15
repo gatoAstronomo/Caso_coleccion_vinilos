@@ -6,18 +6,13 @@ public class ColeccionVinilos{
     ArrayList<Vinilo> vinilos = new ArrayList<>();
 
     // Agrega un vinilo a la lista vinilos con sus respectivos datos
-    public void agregarVinilo(String artista, String album, String year){
+    public void agregarVinilo(String artista, String nombre, String year){
 
         // Crea una instancia de un Vinilo
-        Vinilo vinilo = new Vinilo();
-
-        // Inserta los datos
-        vinilo.artista = artista;
-        vinilo.album = album;
-        vinilo.year = year;
+        Vinilo vinilo = new Vinilo(artista, nombre, year);
 
         // Si hay espacio lo inserta
-        if(vinilos.size() <= 100) {
+        if(vinilos.size() < 100) {
             vinilos.add(vinilo);
         //Sino no inserta y alerta que la colección ya esta completa
         }else{
@@ -37,8 +32,9 @@ public class ColeccionVinilos{
     * true o false según el caso
     */
     public boolean buscarArtista(String artista){
+
         for(Vinilo vinilo : vinilos) {
-            if (vinilo.artista.toLowerCase().equals(artista.toLowerCase())){
+            if (vinilo.artista.toLowerCase().equalsIgnoreCase(artista)){
                 System.out.printf("El artista %s se encuentra en la colección%n%n", artista);
                 return true;
             }
@@ -46,14 +42,16 @@ public class ColeccionVinilos{
 
         System.out.printf("El artista %s no existe en la colección%n%n", artista);
         return false;
+
     }
 
     // Se le indica un artista e imprime todos los vinilos de este
     public void mostrarBusquedaArtista(String artista){
+
         int i = 1;
         for(Vinilo vinilo : vinilos) {
-            if (vinilo.artista.toLowerCase().equals(artista.toLowerCase()))
-                System.out.printf("fila %3d %s - %s - %s %n", i, vinilo.artista, vinilo.album, vinilo.year);
+            if (vinilo.artista.toLowerCase().equalsIgnoreCase(artista))
+                System.out.printf("fila %3d %s - %s - %s %n", i, vinilo.artista, vinilo.nombre, vinilo.year);
             i++;
         }
         System.out.println();
@@ -62,11 +60,13 @@ public class ColeccionVinilos{
 
     // Imprime por pantalla toda la coleccion de vinilos
     public void mostrarColeccion(){
+
         int i = 1;
         for(Vinilo vinilo : vinilos)
-            System.out.printf("fila %3d %s - %s - %s %n", i++, vinilo.album, vinilo.artista, vinilo.year);
+            System.out.printf("fila %3d %s - %s - %s %n", i++, vinilo.nombre, vinilo.artista, vinilo.year);
 
         System.out.println();
+
     }
 
     // Retorna la cantidad de filas disponibles
