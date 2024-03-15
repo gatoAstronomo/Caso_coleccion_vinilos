@@ -56,6 +56,7 @@ public class ColeccionVinilos{
                 System.out.printf("fila %3d %s - %s - %s %n", i, vinilo.artista, vinilo.album, vinilo.year);
             i++;
         }
+        System.out.println();
 
     }
 
