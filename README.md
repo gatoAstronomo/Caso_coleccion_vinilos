@@ -9,7 +9,7 @@ Contiene tres clases principales:
 - Clase que permite almacenar el nombre, artista y año de un vinilo.
 
 ### ColeccionVinilos  
-- Es la abstracción de una colección de vinilos aqui ahi un ejemplo de como se ocupan: 
+- Es la abstracción de una colección de vinilos aquí hay un ejemplo de como se ocupa: 
 - (Importante: la coleccion admite un maximo de 100 vinilos)
 ```java
 //Primero creamos una coleccion de vinilos
