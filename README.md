@@ -8,30 +8,43 @@ Contiene tres clases principales:
 ### Vinilo
 - Clase que permite almacenar el nombre, artista y año de un vinilo.
 
-### ColeccionVinilos  
+### ColectionVinilos  
 - Es la abstracción de una colección de vinilos aquí hay un ejemplo de como se ocupa: 
 - (Importante: la coleccion admite un maximo de 100 vinilos)
+
 ```java
 //Primero creamos una coleccion de vinilos
-ColeccionVinilos myColeccion = new ColeccionVinilos();
+ColectionVinilos myColeccion = new ColectionVinilos();
 
 //Agrega un vinilo a la colección
-myColeccion.agregarVinilo("<nombre_artista>", "<nombre_canción>", "<año_lanzamiento>");
+myColeccion.
+
+agregarVinilo("<nombre_artista>","<nombre_canción>","<año_lanzamiento>");
 
 // Muestra el total de vinilos
-myColeccion.mostrarTotal();
+myColeccion.
+
+mostrarTotal();
 
 // Muestra los espacios disponibles
-myColeccion.mostrarDisponibles();
+myColeccion.
+
+mostrarDisponibles();
 
 // Busca si un artista esta en la colección
-myColeccion.buscarArtista("<nombre_artista>");
+myColeccion.
+
+buscarArtista("<nombre_artista>");
 
 // Muestra todos los vinilos del artista
-myColeccion.mostrarBusquedaArtista("<nombre_artista>");
+myColeccion.
+
+mostrarBusquedaArtista("<nombre_artista>");
 
 // Imprime por pantalla toda la colección de vinilos
-myColeccion.mostrarColeccion();
+myColeccion.
+
+mostrarColeccion();
 ```
 
  

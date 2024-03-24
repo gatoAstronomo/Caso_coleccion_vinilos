@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args){
 
         // Instancia una coleccion de vinilos llamada myColeccion
-        ColeccionVinilos myColeccion = new ColeccionVinilos();
+        ColectionVinilos myColeccion = new ColectionVinilos();
 
         // Agrega 13 vinilos
         myColeccion.agregarVinilo("Iron Maiden","Iron Maiden","1980");

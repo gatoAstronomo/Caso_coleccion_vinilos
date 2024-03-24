@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class ColeccionVinilos{
+public class ColectionVinilos {
 
-    // Lista dinamica con las instancias de tipo Vinilo
+    // Lista dinámica con las instancias de tipo Vinilo
     ArrayList<Vinilo> vinilos = new ArrayList<>();
 
     // Agrega un vinilo a la lista vinilos con sus respectivos datos
@@ -14,7 +14,7 @@ public class ColeccionVinilos{
         // Si hay espacio lo inserta
         if(vinilos.size() < 100) {
             vinilos.add(vinilo);
-        //Sino no inserta y alerta que la colección ya esta completa
+        //Si no no inserta y alerta que la colección ya está completa
         }else{
             System.out.println("La colección ya tiene 100 espacios %n");
         }
@@ -28,7 +28,7 @@ public class ColeccionVinilos{
     public void mostrarTotal(){ System.out.printf("La colección tiene un total de %s vinilos %n%n", totalVinilos()); }
 
     /*
-    * Se le ingresa un artista e indica si este es autor de almenos un vinilo de la colección, además retorna
+    * Se le ingresa un artista e indica si este es autor de al menos un vinilo de la colección, además retorna
     * true o false según el caso
     */
     public boolean buscarArtista(String artista){
@@ -58,7 +58,7 @@ public class ColeccionVinilos{
 
     }
 
-    // Imprime por pantalla toda la coleccion de vinilos
+    // Imprime por pantalla toda la colección de vinilos
     public void mostrarColeccion(){
 
         int i = 1;
