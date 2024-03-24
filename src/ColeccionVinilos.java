@@ -70,7 +70,7 @@ public class ColeccionVinilos{
     }
 
     // Retorna la cantidad de filas disponibles
-    public int disponibles(){return 100 - totalVinilos();}
+    private int disponibles(){return 100 - totalVinilos();}
 
     // Muestra cuantos espacios quedan disponibles
     public void mostrarDisponibles(){System.out.printf("Queda un total de %d espacios libres %n%n", disponibles());}
