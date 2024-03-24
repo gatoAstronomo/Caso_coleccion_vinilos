@@ -6,7 +6,7 @@ public class ColeccionVinilos{
     ArrayList<Vinilo> vinilos = new ArrayList<>();
 
     // Agrega un vinilo a la lista vinilos con sus respectivos datos
-    public void agregarVinilo(String artista, String nombre, String year){
+    protected void agregarVinilo(String artista, String nombre, String year){
 
         // Crea una instancia de un Vinilo
         Vinilo vinilo = new Vinilo(artista, nombre, year);
@@ -24,7 +24,7 @@ public class ColeccionVinilos{
     // Retorna el total de vinilos
     public int totalVinilos(){return vinilos.size();}
 
-    // Mustra por pantalla la cantidad de vinilos de la colección
+    // Muestra por pantalla la cantidad de vinilos de la colección
     public void mostrarTotal(){ System.out.printf("La colección tiene un total de %s vinilos %n%n", totalVinilos()); }
 
     /*
