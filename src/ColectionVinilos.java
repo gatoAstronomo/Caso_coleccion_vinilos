@@ -5,7 +5,7 @@ public class ColectionVinilos {
     // Lista dinámica con las instancias de tipo Vinilo
     ArrayList<Vinilo> vinilos = new ArrayList<>();
 
-    // Agrega un vinilo a la lista vinilos con sus respectivos datos
+    // Agreg un vinilo a la lista vinilos con sus respectivos datos
     protected void agregarVinilo(String artista, String nombre, String year){
 
         // Crea una instancia de un Vinilo
